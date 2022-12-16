@@ -1,0 +1,3 @@
+/home/yinghanhuang/TUM/AR/generate_aruco_board/build/CMakeFiles/rebuild_cache.dir
+/home/yinghanhuang/TUM/AR/generate_aruco_board/build/CMakeFiles/edit_cache.dir
+/home/yinghanhuang/TUM/AR/generate_aruco_board/build/CMakeFiles/generate_board.dir
