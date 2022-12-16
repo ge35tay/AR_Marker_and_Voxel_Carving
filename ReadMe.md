@@ -9,3 +9,8 @@
 ArUco generation
 
 > https://docs.opencv.org/4.x/d5/dae/tutorial_aruco_detection.html
+
+
+## 3. Lib for space carving
+
+> https://github.com/unclearness/vacancy
