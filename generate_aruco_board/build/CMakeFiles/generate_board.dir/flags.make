@@ -6,5 +6,5 @@ CXX_FLAGS =   -O3 -std=c++17 -std=gnu++17
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/local/include/aruco -I/home/yinghanhuang/TUM/AR/generate_aruco_board/include -isystem /usr/local/include/opencv4 
+CXX_INCLUDES = -I/home/yinghanhuang/TUM/AR/generate_aruco_board/include -isystem /usr/local/include/opencv4 
 

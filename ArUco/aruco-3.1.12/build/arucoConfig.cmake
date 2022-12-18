@@ -19,12 +19,12 @@
 #      - aruco_VERSION_PATCH : Patch version part of VERSION. Example: "0"
 #
 # ===================================================================================
-INCLUDE_DIRECTORIES("/usr/local/include")
-INCLUDE_DIRECTORIES("/usr/local/include/aruco")
-SET(aruco_INCLUDE_DIRS "/usr/local/include")
+INCLUDE_DIRECTORIES("/home/yinghanhuang/TUM/AR/Lib/include")
+INCLUDE_DIRECTORIES("/home/yinghanhuang/TUM/AR/Lib/include/aruco")
+SET(aruco_INCLUDE_DIRS "/home/yinghanhuang/TUM/AR/Lib/include")
 
-LINK_DIRECTORIES("/usr/local/lib")
-SET(aruco_LIB_DIR "/usr/local/lib")
+LINK_DIRECTORIES("/home/yinghanhuang/TUM/AR/Lib/lib")
+SET(aruco_LIB_DIR "/home/yinghanhuang/TUM/AR/Lib/lib")
 
 SET(aruco_LIBS opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio aruco) 
 

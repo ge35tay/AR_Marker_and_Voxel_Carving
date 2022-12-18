@@ -15,10 +15,10 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 
 set(generate_aruco_src
     src/generate_aruco.cpp
-   )
+)
 add_executable(generate_board ${generate_aruco_src})
 target_link_libraries(generate_board 
-    ${OpenCV_LIBRARIES}
+    ${OpenCV_LIBRARIES} aruco::aruco
     )
 
 target_compile_options(generate_board

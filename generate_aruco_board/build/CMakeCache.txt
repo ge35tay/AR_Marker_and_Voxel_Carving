@@ -223,7 +223,7 @@ LIBRARY_OUTPUT_PATH:PATH=
 OpenCV_DIR:PATH=/usr/local/lib/cmake/opencv4
 
 //The directory containing a CMake configuration file for aruco.
-aruco_DIR:PATH=/usr/local/share/aruco
+aruco_DIR:PATH=aruco_DIR-NOTFOUND
 
 //Value Computed by CMake
 generate_aruco_board_BINARY_DIR:STATIC=/home/yinghanhuang/TUM/AR/generate_aruco_board/build
