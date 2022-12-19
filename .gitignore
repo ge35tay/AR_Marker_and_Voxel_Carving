@@ -4,3 +4,4 @@ Lib/
 generate_aruco_board/build/
 camera_calibration/build/
 detect_marker/build/
+pose_estimation/build/
