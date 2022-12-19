@@ -92,9 +92,17 @@ make
 
 ```
 cd camera_calibration 
-mkdir build && cd  build 
+mkdir build && cd build 
 cmake .. 
 make 
-./camera_calibration -d=16 -dp=../detector_params.yml -h=4 -w=4 -l=50 -s=200 ./calibration_params.yml -v=3 -ci=2
+./camera_calibration -d=16 -dp=../detector_params.yml -h=4 -w=4 -l=50 -s=200 ./calibration_params.yml -v=2 -ci=2
 ```
 
+## 8. Pose Estimation
+```
+cd pose_estimation
+mkdir build && cd build
+cmake ..
+make
+./pose_estimation -d=16 -h=4 -w=4 -l=50 -s=200 -v=2
+```
