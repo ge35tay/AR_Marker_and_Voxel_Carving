@@ -65,3 +65,27 @@ youtube:
    3. 颜色渲染
 3. week 4
    1. 复杂物体？
+
+
+
+
+## 5. generate aruco board
+> cd generate_aruco_board
+> mkdir build && cd build
+> cmake ..
+> make
+> ./generate_board --bb=1 -h=4 -w=4 -l=50 -s=200 -d=16 --si board.jpg
+
+## 6. detect marker
+> cd detect_marker
+> mkdir build && cd build
+> cmake ..
+> make
+> ./detect_marker -v=2
+
+## 7. camera calibration
+> cd camera_calibration
+> mkdir build && cd  build
+> cmake ..
+> make
+>./camera_calibration -d=16 -dp=../detector_params.yml -h=4 -w=4 -l=50 -s=200 ./calibration_params.yml -v=3 -ci=2
