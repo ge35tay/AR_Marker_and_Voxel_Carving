@@ -1,5 +1,5 @@
 #include <opencv2/highgui.hpp>
-#include <aruco/aruco.h>
+#include <opencv2/aruco.hpp>
 
 namespace{
 const char* about = "Create an ArUco grid board image";
@@ -54,9 +54,9 @@ int main(int argc, char *argv[])
     imageSize.width = markersX * (markerLength + markerSeparation) - markerSeparation + 2 * margins;
     imageSize.height = markersY * (markerLength + markerSeparation) - markerSeparation + 2 * margins;
 
-    cv::Ptr<aruco::Dictionary> dictionary = 
-            aruco::getPredefinedDictionary(aruco::PREDEFINED_DICTIONARY_NAME(dictionaryId)); 
-    cv::Ptr<aruco::GridBoard> board = aruco::GridBoard::create(markersX, markersY, float(markerLength),
+    cv::Ptr<cv::aruco::Dictionary> dictionary = 
+            cv::aruco::getPredefinedDictionary(cv::aruco::PREDEFINED_DICTIONARY_NAME(dictionaryId)); 
+    cv::Ptr<cv::aruco::GridBoard> board = cv::aruco::GridBoard::create(markersX, markersY, float(markerLength),
                                                                     float(markerSeparation), dictionary);
 
     cv::Mat boardImage;
