@@ -106,3 +106,7 @@ cmake ..
 make
 ./pose_estimation -d=16 -h=4 -w=4 -l=50 -s=200 -v=2
 ```
+
+
+## Camera RT
+> https://stackoverflow.com/questions/73999642/camera-pose-estimation-accuracy-with-aruco-board
