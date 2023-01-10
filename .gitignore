@@ -5,3 +5,6 @@ generate_aruco_board/build/
 camera_calibration/build/
 detect_marker/build/
 pose_estimation/build/
+background_extractor/build/
+voxel_carving/build/
+voxel_carving/.vscode/
