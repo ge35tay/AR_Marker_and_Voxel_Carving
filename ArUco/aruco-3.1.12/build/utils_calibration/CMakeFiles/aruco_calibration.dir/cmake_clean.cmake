@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/aruco_calibration.dir/aruco_calibration.cpp.o"
+  "CMakeFiles/aruco_calibration.dir/aruco_calibration.cpp.o.d"
   "CMakeFiles/aruco_calibration.dir/calibrator.cpp.o"
+  "CMakeFiles/aruco_calibration.dir/calibrator.cpp.o.d"
   "aruco_calibration"
   "aruco_calibration.pdb"
 )

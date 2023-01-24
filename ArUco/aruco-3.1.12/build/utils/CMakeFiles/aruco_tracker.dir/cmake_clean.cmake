@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/aruco_tracker.dir/aruco_tracker.cpp.o"
+  "CMakeFiles/aruco_tracker.dir/aruco_tracker.cpp.o.d"
   "aruco_tracker"
   "aruco_tracker.pdb"
 )

@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/fractal_print_marker.dir/fractal_print_marker.cpp.o"
+  "CMakeFiles/fractal_print_marker.dir/fractal_print_marker.cpp.o.d"
   "fractal_print_marker"
   "fractal_print_marker.pdb"
 )

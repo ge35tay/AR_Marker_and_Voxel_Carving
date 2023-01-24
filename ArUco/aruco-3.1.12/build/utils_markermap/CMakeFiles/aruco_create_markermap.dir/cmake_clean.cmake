@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/aruco_create_markermap.dir/aruco_create_markermap.cpp.o"
+  "CMakeFiles/aruco_create_markermap.dir/aruco_create_markermap.cpp.o.d"
   "aruco_create_markermap"
   "aruco_create_markermap.pdb"
 )

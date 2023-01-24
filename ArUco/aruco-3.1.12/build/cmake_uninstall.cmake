@@ -2,17 +2,17 @@
 # File that provides "make uninstall" target
 #  We use the file 'install_manifest.txt'
 # -----------------------------------------------
-IF(NOT EXISTS "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/build/install_manifest.txt")
-  MESSAGE(FATAL_ERROR "Cannot find install manifest: \"/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/build/install_manifest.txt\"")
-ENDIF(NOT EXISTS "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/build/install_manifest.txt")
+IF(NOT EXISTS "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/build/install_manifest.txt")
+  MESSAGE(FATAL_ERROR "Cannot find install manifest: \"/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/build/install_manifest.txt\"")
+ENDIF(NOT EXISTS "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/build/install_manifest.txt")
 
-FILE(READ "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/build/install_manifest.txt" files)
+FILE(READ "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/build/install_manifest.txt" files)
 STRING(REGEX REPLACE "\n" ";" files "${files}")
 FOREACH(file ${files})
   MESSAGE(STATUS "Uninstalling \"$ENV{DESTDIR}${file}\"")
 #  IF(EXISTS "$ENV{DESTDIR}${file}")
 #    EXEC_PROGRAM(
-#      "/usr/bin/cmake" ARGS "-E remove \"$ENV{DESTDIR}${file}\""
+#      "/Applications/CMake.app/Contents/bin/cmake" ARGS "-E remove \"$ENV{DESTDIR}${file}\""
 #      OUTPUT_VARIABLE rm_out
 #      RETURN_VALUE rm_retval
 #      )

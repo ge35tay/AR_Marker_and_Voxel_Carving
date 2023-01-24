@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/aruco_dcf.dir/aruco_dcf.cpp.o"
+  "CMakeFiles/aruco_dcf.dir/aruco_dcf.cpp.o.d"
   "aruco_dcf"
   "aruco_dcf.pdb"
 )

@@ -1,6 +1,6 @@
 # pkg-config file for the library
 
-prefix=/home/yinghanhuang/TUM/AR/Lib
+prefix=/usr/local
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

@@ -1,26 +1,20 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
   )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/utils_calibration/aruco_calibration.cpp" "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/build/utils_calibration/CMakeFiles/aruco_calibration.dir/aruco_calibration.cpp.o"
-  "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/utils_calibration/calibrator.cpp" "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/build/utils_calibration/CMakeFiles/aruco_calibration.dir/calibrator.cpp.o"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
 
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "utils_calibration"
-  "../utils_calibration"
-  "../3rdparty/eigen3"
-  "../src"
-  "/usr/local/include/opencv4"
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/utils_calibration/aruco_calibration.cpp" "utils_calibration/CMakeFiles/aruco_calibration.dir/aruco_calibration.cpp.o" "gcc" "utils_calibration/CMakeFiles/aruco_calibration.dir/aruco_calibration.cpp.o.d"
+  "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/utils_calibration/calibrator.cpp" "utils_calibration/CMakeFiles/aruco_calibration.dir/calibrator.cpp.o" "gcc" "utils_calibration/CMakeFiles/aruco_calibration.dir/calibrator.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/build/src/CMakeFiles/aruco.dir/DependInfo.cmake"
+  "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/build/src/CMakeFiles/aruco.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

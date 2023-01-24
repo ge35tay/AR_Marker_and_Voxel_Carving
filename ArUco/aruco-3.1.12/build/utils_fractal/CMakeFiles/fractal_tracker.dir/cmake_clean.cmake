@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/fractal_tracker.dir/fractal_tracker.cpp.o"
+  "CMakeFiles/fractal_tracker.dir/fractal_tracker.cpp.o.d"
   "fractal_tracker"
   "fractal_tracker.pdb"
 )

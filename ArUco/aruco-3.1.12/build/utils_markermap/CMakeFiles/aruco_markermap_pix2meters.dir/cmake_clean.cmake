@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/aruco_markermap_pix2meters.dir/aruco_markermap_pix2meters.cpp.o"
+  "CMakeFiles/aruco_markermap_pix2meters.dir/aruco_markermap_pix2meters.cpp.o.d"
   "aruco_markermap_pix2meters"
   "aruco_markermap_pix2meters.pdb"
 )

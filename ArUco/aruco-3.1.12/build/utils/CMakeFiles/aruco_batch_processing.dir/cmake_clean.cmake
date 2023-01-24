@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/aruco_batch_processing.dir/aruco_batch_processing.cpp.o"
+  "CMakeFiles/aruco_batch_processing.dir/aruco_batch_processing.cpp.o.d"
   "aruco_batch_processing"
   "aruco_batch_processing.pdb"
 )

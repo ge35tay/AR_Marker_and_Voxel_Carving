@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/aruco_print_dictionary.dir/aruco_print_dictionary.cpp.o"
+  "CMakeFiles/aruco_print_dictionary.dir/aruco_print_dictionary.cpp.o.d"
   "aruco_print_dictionary"
   "aruco_print_dictionary.pdb"
 )

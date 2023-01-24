@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/fractal_pix2meters.dir/fractal_pix2meters.cpp.o"
+  "CMakeFiles/fractal_pix2meters.dir/fractal_pix2meters.cpp.o.d"
   "fractal_pix2meters"
   "fractal_pix2meters.pdb"
 )

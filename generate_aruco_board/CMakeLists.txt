@@ -9,7 +9,7 @@ endif(COMMAND cmake_policy)
 set (CMAKE_CXX_STANDARD 17)
 find_package(OpenCV REQUIRED)
 find_package(aruco REQUIRED)
-include_directories(${OPENCV_INCLUDE_DIRS})
+include_directories(${OPENCV_INCLUDE_DIRS "/usr/local/Cellar/opencv/4.7.0_1/include"})
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
 
@@ -18,7 +18,7 @@ set(generate_aruco_src
 )
 add_executable(generate_board ${generate_aruco_src})
 target_link_libraries(generate_board 
-    ${OpenCV_LIBRARIES} aruco::aruco
+    ${OpenCV_LIBRARIES "/usr/local/Cellar/opencv/4.7.0_1/lib"} aruco::aruco
     )
 
 target_compile_options(generate_board

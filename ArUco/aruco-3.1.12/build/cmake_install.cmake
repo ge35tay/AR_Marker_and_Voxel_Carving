@@ -1,8 +1,8 @@
-# Install script for directory: /home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12
+# Install script for directory: /Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/yinghanhuang/TUM/AR/Lib")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,35 +27,35 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
-# Install shared libraries without execute permission?
-if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "1")
-endif()
-
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/Library/Developer/CommandLineTools/usr/bin/objdump")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES
-    "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/build/aruco-uninstalled.pc"
-    "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/build/aruco.pc"
+    "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/build/aruco-uninstalled.pc"
+    "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/build/aruco.pc"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/aruco" TYPE FILE FILES "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/build/arucoConfig.cmake")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/aruco" TYPE FILE FILES "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/build/arucoConfig.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/build/src/cmake_install.cmake")
-  include("/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/build/utils/cmake_install.cmake")
-  include("/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/build/utils_markermap/cmake_install.cmake")
-  include("/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/build/utils_calibration/cmake_install.cmake")
-  include("/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/build/utils_dcf/cmake_install.cmake")
-  include("/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/build/utils_fractal/cmake_install.cmake")
+  include("/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/build/src/cmake_install.cmake")
+  include("/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/build/utils/cmake_install.cmake")
+  include("/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/build/utils_markermap/cmake_install.cmake")
+  include("/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/build/utils_calibration/cmake_install.cmake")
+  include("/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/build/utils_dcf/cmake_install.cmake")
+  include("/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/build/utils_fractal/cmake_install.cmake")
 
 endif()
 
@@ -67,5 +67,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

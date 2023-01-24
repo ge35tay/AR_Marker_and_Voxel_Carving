@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/fractal_create.dir/fractal_create.cpp.o"
+  "CMakeFiles/fractal_create.dir/fractal_create.cpp.o.d"
   "fractal_create"
   "fractal_create.pdb"
 )

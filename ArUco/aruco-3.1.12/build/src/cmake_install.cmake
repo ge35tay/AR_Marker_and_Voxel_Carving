@@ -1,8 +1,8 @@
-# Install script for directory: /home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/src
+# Install script for directory: /Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/yinghanhuang/TUM/AR/Lib")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,108 +27,89 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
-# Install shared libraries without execute permission?
-if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "1")
-endif()
-
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmainx" OR NOT CMAKE_INSTALL_COMPONENT)
-  foreach(file
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libaruco.so.3.1.12"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libaruco.so.3.1"
-      )
-    if(EXISTS "${file}" AND
-       NOT IS_SYMLINK "${file}")
-      file(RPATH_CHECK
-           FILE "${file}"
-           RPATH "")
-    endif()
-  endforeach()
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/Library/Developer/CommandLineTools/usr/bin/objdump")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "main" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE FILES
-    "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/build/src/libaruco.so.3.1.12"
-    "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/build/src/libaruco.so.3.1"
+    "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/build/src/libaruco.3.1.12.dylib"
+    "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/build/src/libaruco.3.1.dylib"
     )
   foreach(file
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libaruco.so.3.1.12"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libaruco.so.3.1"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libaruco.3.1.12.dylib"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libaruco.3.1.dylib"
       )
     if(EXISTS "${file}" AND
        NOT IS_SYMLINK "${file}")
-      file(RPATH_CHANGE
-           FILE "${file}"
-           OLD_RPATH "/usr/local/lib:"
-           NEW_RPATH "")
+      execute_process(COMMAND /usr/bin/install_name_tool
+        -delete_rpath "/usr/local/lib"
+        "${file}")
       if(CMAKE_INSTALL_DO_STRIP)
-        execute_process(COMMAND "/usr/bin/strip" "${file}")
+        execute_process(COMMAND "/Library/Developer/CommandLineTools/usr/bin/strip" -x "${file}")
       endif()
     endif()
   endforeach()
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmainx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libaruco.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libaruco.so")
-    file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libaruco.so"
-         RPATH "")
-  endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE FILES "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/build/src/libaruco.so")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libaruco.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libaruco.so")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libaruco.so"
-         OLD_RPATH "/usr/local/lib:"
-         NEW_RPATH "")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "main" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE FILES "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/build/src/libaruco.dylib")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libaruco.dylib" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libaruco.dylib")
+    execute_process(COMMAND /usr/bin/install_name_tool
+      -delete_rpath "/usr/local/lib"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libaruco.dylib")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libaruco.so")
+      execute_process(COMMAND "/Library/Developer/CommandLineTools/usr/bin/strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libaruco.dylib")
     endif()
   endif()
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/aruco" TYPE FILE FILES
-    "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/src/aruco_cvversioning.h"
-    "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/src/cameraparameters.h"
-    "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/src/dictionary_based.h"
-    "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/src/ippe.h"
-    "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/src/markerdetector_impl.h"
-    "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/src/markermap.h"
-    "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/src/timers.h"
-    "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/src/aruco_export.h"
-    "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/src/cvdrawingutils.h"
-    "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/src/dictionary.h"
-    "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/src/levmarq.h"
-    "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/src/marker.h"
-    "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/src/picoflann.h"
-    "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/src/aruco.h"
-    "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/src/debug.h"
-    "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/src/markerdetector.h"
-    "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/src/markerlabeler.h"
-    "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/src/posetracker.h"
-    "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/src/fractaldetector.h"
+    "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/src/aruco_cvversioning.h"
+    "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/src/cameraparameters.h"
+    "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/src/dictionary_based.h"
+    "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/src/ippe.h"
+    "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/src/markerdetector_impl.h"
+    "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/src/markermap.h"
+    "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/src/timers.h"
+    "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/src/aruco_export.h"
+    "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/src/cvdrawingutils.h"
+    "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/src/dictionary.h"
+    "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/src/levmarq.h"
+    "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/src/marker.h"
+    "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/src/picoflann.h"
+    "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/src/aruco.h"
+    "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/src/debug.h"
+    "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/src/markerdetector.h"
+    "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/src/markerlabeler.h"
+    "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/src/posetracker.h"
+    "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/src/fractaldetector.h"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/aruco/fractallabelers" TYPE FILE FILES
-    "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/src/fractallabelers/fractalposetracker.h"
-    "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/src/fractallabelers/fractalmarkerset.h"
-    "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/src/fractallabelers/fractalmarker.h"
-    "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/src/fractallabelers/fractallabeler.h"
+    "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/src/fractallabelers/fractalposetracker.h"
+    "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/src/fractallabelers/fractalmarkerset.h"
+    "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/src/fractallabelers/fractalmarker.h"
+    "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/src/fractallabelers/fractallabeler.h"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/aruco/dcf" TYPE FILE FILES
-    "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/src/dcf/dcfmarkermaptracker.h"
-    "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/src/dcf/dcfmarkertracker.h"
-    "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/src/dcf/dcf_utils.h"
-    "/home/yinghanhuang/TUM/AR/ArUco/aruco-3.1.12/src/dcf/trackerimpl.h"
+    "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/src/dcf/dcfmarkermaptracker.h"
+    "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/src/dcf/dcfmarkertracker.h"
+    "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/src/dcf/dcf_utils.h"
+    "/Users/hannahbell/AR_Marker_and_Voxel_Carving/ArUco/aruco-3.1.12/src/dcf/trackerimpl.h"
     )
 endif()
 

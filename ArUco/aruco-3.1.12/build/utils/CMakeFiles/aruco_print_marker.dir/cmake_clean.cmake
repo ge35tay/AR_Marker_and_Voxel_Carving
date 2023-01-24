@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/aruco_print_marker.dir/aruco_print_marker.cpp.o"
+  "CMakeFiles/aruco_print_marker.dir/aruco_print_marker.cpp.o.d"
   "aruco_print_marker"
   "aruco_print_marker.pdb"
 )

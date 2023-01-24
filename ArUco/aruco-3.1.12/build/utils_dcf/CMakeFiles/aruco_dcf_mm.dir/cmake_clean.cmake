@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/aruco_dcf_mm.dir/aruco_dcf_markermap.cpp.o"
+  "CMakeFiles/aruco_dcf_mm.dir/aruco_dcf_markermap.cpp.o.d"
   "aruco_dcf_mm"
   "aruco_dcf_mm.pdb"
 )
