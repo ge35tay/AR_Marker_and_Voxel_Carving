@@ -1,0 +1,3 @@
+/Users/hannahbell/AR_Marker_and_Voxel_Carving/generate_aruco_board/build/CMakeFiles/generate_aruco_board.dir
+/Users/hannahbell/AR_Marker_and_Voxel_Carving/generate_aruco_board/build/CMakeFiles/edit_cache.dir
+/Users/hannahbell/AR_Marker_and_Voxel_Carving/generate_aruco_board/build/CMakeFiles/rebuild_cache.dir
