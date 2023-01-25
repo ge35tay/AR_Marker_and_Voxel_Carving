@@ -89,6 +89,7 @@ void Ar::camera_cablirate(std::vector<std::string> file_names, bool refine_detec
 
 void Ar::pose_estimation()
 {
+    // TODO RT computation
     cv::Mat image; 
 
     m_allRTs.clear();
