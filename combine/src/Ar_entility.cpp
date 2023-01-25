@@ -106,7 +106,7 @@ void Ar::pose_estimation()
         cv::Mat R_cam_to_grid, R_grid_to_cam, T_grid_to_cam, RT;
         cv::Rodrigues(rvecs, R_cam_to_grid);
         cv::transpose(R_cam_to_grid, R_grid_to_cam);
-        T_grid_to_cam = cv::Mat(3, 1, CV_64F, tvecs);
+        T_grid_to_cam = cv::Mat(3, 1, CV_64F, tvecs);   // TODO t_vec ?
         
         cv::Mat RT_i(3, 4, CV_64F);
         R_grid_to_cam.copyTo(RT_i.rowRange(0, 3).colRange(0, 3));
@@ -222,7 +222,7 @@ void Ar::voxel_carving()
 
     // save points 
     std::ofstream ofs;
-    ofs.open("../result_points/points.pts", std::ios::out);
+    ofs.open("../result_points/points.txt", std::ios::out);
 
     for (int i=0; i<VOXEL_DIM; i++) 
     {

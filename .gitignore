@@ -7,4 +7,5 @@ detect_marker/build/
 pose_estimation/build/
 background_extractor/build/
 voxel_carving/build/
+combine/build/
 voxel_carving/.vscode/
